@@ -10,7 +10,6 @@ steps:
     publishWebProjects: true
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'gab-dotNetSP'
-    appType: 'webAppLinux'
-    appName: 'gab-webapp'
+    azureSubscription: 'MyAzureRMConnection'
+    appName: 'webappdeploy'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
